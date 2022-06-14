@@ -5,9 +5,9 @@
     <el-table :data="tableData"><!--:data 绑定data()的数组值,会动态根据其变化而变化-->
       <el-table-column prop="id" label="编号" />
       <!--:data prop绑定{}中的key，label为自定义显示的列表头-->
-      <el-table-column prop="title" label="名称" />
-      <el-table-column prop="keyCode" label="代号" />
-      <!--<el-table-column prop="desc" label="描述"/>-->
+      <el-table-column prop="title" label="产品名称" />
+      <el-table-column prop="keyCode" label="产品代号" />
+      <el-table-column prop="desc" label="描述" show-overflow-tooltip />
       <el-table-column prop="operator" label="操作人" />
       <el-table-column prop="update" label="操作时间" />
     </el-table>
